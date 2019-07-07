@@ -1,0 +1,83 @@
+<style>
+form {
+    border: 3px solid #f1f1f1;
+}
+/* Full-width inputs */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+    opacity: 0.8;
+}
+img.avatar {
+    width: 20%;
+    border-radius: 25%;
+}
+
+/* Add padding to containers */
+.container {
+    padding: 16px;
+}
+<style>
+    
+        *{margin: 0; padding: 0;}
+        body{background: #ecf1f4; font-family: sans-serif;background-image: url("bgg.jpg");
+        background-size: 1500px 800px;}
+        
+        .form-wrap{ width: 320px; background: #3e3d3d; padding: 40px 20px; box-sizing: border-box; position: fixed; left: 50%; top: 50%; transform: translate(-50%, -50%);}
+        h1{text-align: center; color: #fff; font-weight: normal; margin-bottom: 20px;}
+        
+        input{width: 100%; background: none; border: 1px solid #fff; border-radius: 3px; padding: 6px 15px; box-sizing: border-box; margin-bottom: 20px; font-size: 16px; color: #fff;}
+        
+        input[type="button"]{ background: #bac675; border: 0; cursor: pointer; color: #3e3d3d;}
+        input[type="button"]:hover{ background: #a4b15c; transition: .6s;}
+        
+        ::placeholder{color: #fff;}
+    
+    </style>
+</style>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Admin Login</title>
+    </head>
+    <body>
+    <h2 style="text-align:center;font-style:italic;">Admin Login Form</h2>
+        <form method="post" action="adminlogin.jsp">
+        <div class="imgcontainer">
+    <img src="admin.png" alt="Avatar" class="avatar">
+  </div>
+         <div class="container">
+    <label for="username"><b>Username</b></label>
+    <input type="text"  placeholder="Enter Username" name="username" required>
+    <label for="password"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="password" required>
+    <button type="submit">Login</button>
+     <button type="reset">Reset</button>
+                       
+        </form>
+    </body>
+</html>
